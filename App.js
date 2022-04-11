@@ -30,7 +30,7 @@ export default function App() {
                   <Stack.Screen name="Show" component={ShowScreen} options={({route, navigation})=>{
                       return {
                           headerRight: () => (
-                              <TouchableOpacity onPress={()=>{navigation.navigate('Edit', {id: route.params.id})}}>
+                              <TouchableOpacity onPress={()=>{navigation.navigate("Edit", {id: route.params.id})}}>
                                   <EvilIcons name="pencil" size={35} />
                               </TouchableOpacity>
                           ),
